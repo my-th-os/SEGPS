@@ -58,6 +58,11 @@ namespace SEGPS
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.btRef = new System.Windows.Forms.Button();
+            this.btDb = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.tbDbDist = new System.Windows.Forms.TextBox();
+            this.tbDb = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -298,11 +303,61 @@ namespace SEGPS
             this.btRef.UseVisualStyleBackColor = true;
             this.btRef.Click += new System.EventHandler(this.btRef_Click);
             // 
+            // btDb
+            // 
+            this.btDb.Location = new System.Drawing.Point(458, 433);
+            this.btDb.Name = "btDb";
+            this.btDb.Size = new System.Drawing.Size(23, 23);
+            this.btDb.TabIndex = 28;
+            this.btDb.Text = "<";
+            this.btDb.UseVisualStyleBackColor = true;
+            this.btDb.Click += new System.EventHandler(this.btDb_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 465);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(80, 15);
+            this.label14.TabIndex = 30;
+            this.label14.Text = "Distance [km]";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(12, 439);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(55, 15);
+            this.label15.TabIndex = 29;
+            this.label15.Text = "Database";
+            // 
+            // tbDbDist
+            // 
+            this.tbDbDist.Location = new System.Drawing.Point(98, 462);
+            this.tbDbDist.Name = "tbDbDist";
+            this.tbDbDist.ReadOnly = true;
+            this.tbDbDist.Size = new System.Drawing.Size(383, 23);
+            this.tbDbDist.TabIndex = 31;
+            // 
+            // tbDb
+            // 
+            this.tbDb.Location = new System.Drawing.Point(98, 433);
+            this.tbDb.Name = "tbDb";
+            this.tbDb.ReadOnly = true;
+            this.tbDb.Size = new System.Drawing.Size(354, 23);
+            this.tbDb.TabIndex = 27;
+            this.tbDb.DoubleClick += new System.EventHandler(this.tbDb_DoubleClick);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(493, 423);
+            this.ClientSize = new System.Drawing.Size(493, 498);
+            this.Controls.Add(this.btDb);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.tbDbDist);
+            this.Controls.Add(this.tbDb);
             this.Controls.Add(this.btRef);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -369,6 +424,11 @@ namespace SEGPS
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btRef;
+        private System.Windows.Forms.Button btDb;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox tbDbDist;
+        private System.Windows.Forms.TextBox tbDb;
     }
 }
 
