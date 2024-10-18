@@ -299,5 +299,16 @@ namespace SEGPS
                 Clipboard.SetText(tbDb.Text, TextDataFormat.UnicodeText);
             }
         }
+
+        private void tbRef_DoubleClick(object sender, EventArgs e)
+        {
+            if (tbRef.Text.Length > 0)
+            {
+                tbRef.Select(0, tbRef.Text.Length);
+                // the database coord will become new GPS coord, when clipboard change is detected
+                // could be prevented by: clipBoardContent = tbRef.Text;
+                Clipboard.SetText(tbRef.Text, TextDataFormat.UnicodeText);
+            }
+        }
     }
 }
