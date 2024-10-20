@@ -159,7 +159,9 @@ namespace SEGPS
 
         private void DatabaseWrite()
         {
-            File.WriteAllLines(databasePath, database.ConvertAll(gps => gps.ToString()));
+            var strings = database.ConvertAll(gps => gps.ToString());
+            strings.Sort();
+            File.WriteAllLines(databasePath, strings);
         }
 
         private void DatabaseUpdate(Gps gps)
