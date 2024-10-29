@@ -78,7 +78,7 @@ namespace SEGPS
 
         public static string GetGpsString(string name, float x, float y, float z, string color)
         {
-            return GetGpsString(name, x.ToString(NumberFormat), y.ToString(NumberFormat), z.ToString(NumberFormat), color);
+            return GetGpsString(name, x.ToString("0.##", NumberFormat), y.ToString("0.##", NumberFormat), z.ToString("0.##", NumberFormat), color);
         }
 
         public static string GetGpsString(string name, Vector3 v, string color)

@@ -89,9 +89,9 @@ namespace SEGPS
             SetTextBox(sender, tbGPS, gps.ToString());
 
             SetTextBox(sender, tbName, gps.Name);
-            SetTextBox(sender, tbX, gps.X.ToString(Gps.NumberFormat));
-            SetTextBox(sender, tbY, gps.Y.ToString(Gps.NumberFormat));
-            SetTextBox(sender, tbZ, gps.Z.ToString(Gps.NumberFormat));
+            SetTextBox(sender, tbX, gps.X.ToString("0.##", Gps.NumberFormat));
+            SetTextBox(sender, tbY, gps.Y.ToString("0.##", Gps.NumberFormat));
+            SetTextBox(sender, tbZ, gps.Z.ToString("0.##", Gps.NumberFormat));
             SetTextBox(sender, tbColor, gps.Color);
             try
             {
